@@ -3,6 +3,7 @@
 grep -v ");" /var/www/html/nextcloud/config/config.php > /var/www/html/nextcloud/config/config2.php
 echo ");" >> /var/www/html/nextcloud/config/config2.php
 mv /var/www/html/nextcloud/config/config2.php /var/www/html/nextcloud/config/config.php
+chown www-data:www-data /var/www/html/nextcloud/config/config.php
 
 function eof {
   cd;
