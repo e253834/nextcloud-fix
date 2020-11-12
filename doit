@@ -8,7 +8,6 @@ chown www-data:www-data /var/www/html/nextcloud/config/config.php
 function eof {
   cd;
   rm -rf ~/nextcloud-fix;
-  systemctl reboot;
 }
 
 trap eof EXIT
